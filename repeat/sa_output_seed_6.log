@@ -1,0 +1,25 @@
+/home/byuan48/anaconda3/envs/llm-attacks/lib/python3.8/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  4.88it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  5.64it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  5.50it/s]
+Traceback (most recent call last):
+  File "test_sa.py", line 62, in <module>
+    model, tokenizer = load_model_and_tokenizer(model_path, 
+  File "/home/byuan48/projects/llm-attacks/llm_attacks/minimal_gcg/opt_utils.py", line 188, in load_model_and_tokenizer
+    model = AutoModelForCausalLM.from_pretrained(
+  File "/home/byuan48/anaconda3/envs/llm-attacks/lib/python3.8/site-packages/transformers/modeling_utils.py", line 2724, in to
+    return super().to(*args, **kwargs)
+  File "/home/byuan48/anaconda3/envs/llm-attacks/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1173, in to
+    return self._apply(convert)
+  File "/home/byuan48/anaconda3/envs/llm-attacks/lib/python3.8/site-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  File "/home/byuan48/anaconda3/envs/llm-attacks/lib/python3.8/site-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  File "/home/byuan48/anaconda3/envs/llm-attacks/lib/python3.8/site-packages/torch/nn/modules/module.py", line 804, in _apply
+    param_applied = fn(param)
+  File "/home/byuan48/anaconda3/envs/llm-attacks/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1159, in convert
+    return t.to(
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

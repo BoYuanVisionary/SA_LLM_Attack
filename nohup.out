@@ -1,0 +1,6 @@
+run.sh: line 25: 346538 Killed                  nohup python test_gd.py --seed "$seed" --batch_size 128 --device "$device" > "./repeat/gd_output_seed_${seed}.log" 2>&1
+run.sh: line 25: 346539 Killed                  nohup python test_gd.py --seed "$seed" --batch_size 128 --device "$device" > "./repeat/gd_output_seed_${seed}.log" 2>&1
+run.sh: line 25: 346541 Killed                  nohup python test_gd.py --seed "$seed" --batch_size 128 --device "$device" > "./repeat/gd_output_seed_${seed}.log" 2>&1
+run.sh: line 25: 346540 Killed                  nohup python test_gd.py --seed "$seed" --batch_size 128 --device "$device" > "./repeat/gd_output_seed_${seed}.log" 2>&1
+run.sh: line 28: syntax error near unexpected token `then'
+run.sh: line 28: ` (( seed % 4 == 3 )); then'
